@@ -2,7 +2,6 @@ import { Stack , Button } from "@mui/material";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import Avatar from '@mui/material/Avatar';
-import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import { useState } from "react";
 
 
@@ -10,7 +9,7 @@ import { logo } from "../utils/constants";
 import { SearchBar } from "./";
 
 
-const Navbar = () => { 
+const Navbar2 = () => { 
 
   const [toggle , settoggle] = useState(true);
 
@@ -43,11 +42,10 @@ const Navbar = () => {
       <h2 className="title" style={{color : "white" }} >YTube</h2>
     </Link>
     <SearchBar />
-    <Avatar  style={{display : toggle ? 'none' : 'inline' , textAlign : 'center' , width : 45 , height : 30, paddingTop : 10 , paddingBottom : 0}} > DH </Avatar>
-    <Button  onClick={ handleLogin } style={{color : 'white' , backgroundColor : 'red' , marginBottom : 5 , marginLeft : 5 , display : toggle ? 'block' : 'none'}} variant="outlined" >Login</Button>
+    <Avatar  style={{padding : 5 , backgroundColor : 'gray'}} > DH </Avatar>
   </Stack>
 ) 
 
 };
 
-export default Navbar;
+export default Navbar2;

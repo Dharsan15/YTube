@@ -19,7 +19,7 @@ const Feed = () => {
 
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <Stack sx={{ flexDirection: { sx: "column", md: "row" } }}>
         <Box
           sx={{
