@@ -60,7 +60,7 @@ const SignUp = () => {
         navigate("/login");
       } else {
         axios.post(API_KEY, user);
-        navigate('/home')
+        navigate("/home");
       }
     } else {
       alert("please fill all the fields");
@@ -111,6 +111,7 @@ const SignUp = () => {
           <p style={{ color: "white", marginLeft: 300 }}>
             Already have an account ?{" "}
             <a
+              className="lub1"
               target="_blank"
               style={{ color: "white", marginLeft: 10 }}
               onClick={goToLogin}

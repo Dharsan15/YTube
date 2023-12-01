@@ -30,7 +30,6 @@ const Login = () => {
     const userExist = await checkUserExists(user.username, user.password);
 
     if (userExist) {
-
       navigate("/home");
     } else {
       alert("User does not exists");
@@ -38,8 +37,8 @@ const Login = () => {
   };
 
   const goToSignup = () => {
-    navigate('/signup');
-  }
+    navigate("/signup");
+  };
 
   return (
     <>
@@ -65,6 +64,7 @@ const Login = () => {
           <p style={{ color: "white", marginLeft: 100 }}>
             Don't have a account ?{" "}
             <a
+              className="lub"
               onClick={goToSignup}
               target="_blank"
               style={{ color: "white", marginLeft: 10 }}
